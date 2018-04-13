@@ -1,25 +1,23 @@
 import numpy as np
 from sklearn.model_selection import train_test_split
-from sklearn.dummy import DummyClassifier
 
-
-def load_data(path, seed=42):
-    data = np.loadtxt(path, dtype=np.int, delimiter=',', skiprows=1)
-    return train_test_split(data[:, 1:-1], data[:, -1], random_state=seed)
+from model import CreditModel
 
 
 def main():
     # Load data from disk and split into training and validation sets.
-    X_train, X_test, y_train, y_test = load_data('data/credit-data.csv')
+    data = np.loadtxt('data/credit-data.csv', dtype=np.int, delimiter=',', skiprows=1)
+    X, y = data[:, 1:-1], data[:, -1]
+    X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
 
-    # TODO: Replace this dummy classifier with your own model!
-    model = DummyClassifier(strategy='uniform')
+    # Fit the model against training data, and print its accuracy on test data.
+    model = CreditModel()
     model.fit(X_train, y_train)
 
-    # Print out the model accuracy after predicting against `X_test`.
     y_hat = model.predict(X_test)
+    assert len(y_hat) == len(X_test)
     accuracy = np.sum(np.squeeze(y_hat) == y_test) / y_test.size
-    print("Model accuracy: {:.6f}".format(accuracy))
+    print("Model accuracy: {:.3f}%".format(accuracy * 100))
 
 
 if __name__ == '__main__':
