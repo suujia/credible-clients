@@ -15,7 +15,9 @@ exploratory task! Feel free to import whatever other libraries you wish.
 You should do most of your work in [`main.py`](main.py). It contains some
 scaffolding that loads the training data from disk and prints out the accuracy
 of the given model. To run this code, you'll need Python and two libraries:
-[NumPy] and [`scikit-learn`].
+[NumPy] and [`scikit-learn`]. After invoking `python main.py` from your shell
+of choice, you should see the model accuracy printed: approximately 50%,
+since the provided model predicts completely at random.
 
 ## Instructions
 
