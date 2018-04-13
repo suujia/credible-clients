@@ -17,8 +17,8 @@ def main():
     model.fit(X_train, y_train)
 
     # Print out the model accuracy after predicting against `X_test`.
-    y = model.predict(X_test)
-    accuracy = np.sum(y == y_test) / y.size
+    y_hat = model.predict(X_test)
+    accuracy = np.sum(np.squeeze(y_hat) == y_test) / y_test.size
     print("Model accuracy: {:.6f}".format(accuracy))
 
 
