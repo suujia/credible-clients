@@ -16,7 +16,7 @@ def main():
 
     y_hat = model.predict(X_test)
     assert len(y_hat) == len(X_test)
-    accuracy = np.sum(np.squeeze(y_hat) == y_test) / y_test.size
+    accuracy = np.sum(np.squeeze(y_hat) == y_test) / float(y_test.size)
     print("Model accuracy: {:.3f}%".format(accuracy * 100))
 
 

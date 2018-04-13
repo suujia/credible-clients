@@ -17,18 +17,19 @@ in whatever way you want (feel free to import any libraries you wish). You can
 look at [**`main.py`**](main.py) to see how these methods will be called. Don't
 worry about getting "good" results — treat this as an exploratory task!
 
-To run this code, you'll need Python and two libraries: [NumPy] and [`scikit-learn`].
-After invoking **`python main.py`** from your shell of choice, you should see the model
-accuracy printed: approximately 50% if you haven't changed anything, since the provided
-model predicts completely randomly.
+To run this code, you'll need Python and three libraries: [NumPy], [SciPy],
+and [`scikit-learn`]. After invoking **`python main.py`** from your shell of
+choice, you should see the model accuracy printed: approximately 50% if you
+haven't changed anything, since the provided model predicts completely randomly.
 
 ## Instructions
 
-Here are the three things you should do:
+Here are the things you should do:
 
 1. Fork this repo, so we can see your code!
-2. Replace the placeholder code in [`model.py`](model.py) with your own model.
-3. Fill in the "write-up" section below in your copy of the README.
+2. Install the required libraries using `pip install -r requirements.txt` (if needed).
+3. Replace the placeholder code in [`model.py`](model.py) with your own model.
+4. Fill in the "write-up" section below in your copy of the README.
 
 _Good luck, and have fun with this_! :rocket:
 
@@ -60,4 +61,5 @@ payment, and a `0` otherwise.
 
 [UCI]: https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients
 [NumPy]: http://www.numpy.org
+[SciPy]: https://www.scipy.org
 [`scikit-learn`]: http://scikit-learn.org
