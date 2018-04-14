@@ -28,8 +28,9 @@ Here are the things you should do:
 
 1. Fork this repo, so we can see your code!
 2. Install the required libraries using `pip install -r requirements.txt` (if needed).
-3. Replace the placeholder code in [`model.py`](model.py) with your own model.
-4. Fill in the "write-up" section below in your copy of the README.
+3. Ensure everything works by running the code using `python main.py` — it should print the model accuracy.
+4. Replace the placeholder code in [`model.py`](model.py) with your own model.
+5. Fill in the "write-up" section below in your forked copy of the README.
 
 _Good luck, and have fun with this_! :rocket:
 
