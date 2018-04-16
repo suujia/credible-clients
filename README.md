@@ -15,7 +15,8 @@ Most of the work should be done in [**`model.py`**](model.py). It contains a
 barebones model class; your job is to implement the `fit` and `predict` methods,
 in whatever way you want (feel free to import any libraries you wish). You can
 look at [**`main.py`**](main.py) to see how these methods will be called. Don't
-worry about getting "good" results — treat this as an exploratory task!
+worry about getting "good" results (this dataset is _very tough_ to predict on)
+— treat this as an exploratory task!
 
 To run this code, you'll need Python and three libraries: [NumPy], [SciPy],
 and [`scikit-learn`]. After invoking **`python main.py`** from your shell of
@@ -28,7 +29,7 @@ Here are the things you should do:
 
 1. Fork this repo, so we can see your code!
 2. Install the required libraries using `pip install -r requirements.txt` (if needed).
-3. Ensure everything works by running the code using `python main.py` — it should print the model accuracy.
+3. Ensure you see the model's accuracy/precision/recall scores printed when running `python main.py`.
 4. Replace the placeholder code in [`model.py`](model.py) with your own model.
 5. Fill in the "write-up" section below in your forked copy of the README.
 
@@ -37,8 +38,8 @@ _Good luck, and have fun with this_! :rocket:
 
 ## Write-up
 
-Give a brief summary of the approach you decided to take, and why! Include
-your model accuracy as well!
+Give a brief summary of the approach you took, and why! Include your model's
+accuracy/precision/recall scores as well!
 
 
 ## Data Format
