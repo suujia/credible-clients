@@ -38,9 +38,17 @@ _Good luck, and have fun with this_! :rocket:
 
 ## Write-up
 
-Give a brief summary of the approach you took, and why! Include your model's
-accuracy/precision/recall scores as well!
+Please read User Guide for instructions to run these algorithms with docker. 
+Accuracy:  68.000%
+Precision: 27.946%
+Recall:    27.695%
 
+I used the k-nearest algorithm (really only took one nearest in my algorithm). Divided the data up with k folds (10 folds) to train and test 10 separate times. I was trying to get ratios and other measures such as:
+- % paid — prev payment / prev bill 
+- # months owed in the month prior 
+- Education, marital status, age, gender
+- % borrowed — prev bill / credit limit 
+however I tried simply imputing all the data into an imported classifier (without creating extra ratios) and found that the accuracy was not bad. So I decided it wasn't worth the effort (results in userguide.md). 
 
 ## Data Format
 
